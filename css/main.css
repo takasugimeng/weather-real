@@ -54,6 +54,12 @@
   height: 257px;
   background-color: white;
 }
+.haze .weather-icon {
+  background: url("/rain.png")center center no-repeat;
+  width: 123px;
+  height: 257px;
+  background-color: white;
+}
 
 @font-face {
   font-family: Pixellari;
