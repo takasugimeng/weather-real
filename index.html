@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Set a page title -->
+  <title>Weather</title>
+
+  <!-- Site Styles -->
+  <link rel="stylesheet" href="/css/tachyons.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/styles/fonts/fonts.css" />
+</head>
+
+<body class="cold clear calm rain windy warm snow cloudy">
+
+  <div class="px tc pt6  bg-washed-yellow">
+
+    <!-- If there is an error, this box is shown. 'dn' is the only required class -->
+    <div id="error" class="dn bg-red white pa4 fixed bottom-0 w-100">
+      Wait, what??
+    </div>
+
+
+    <div class="weather-icon center"></div>
+
+    <div>
+      <h1> <span id="temp" class="f-headline"></span></h1>
+      <p>Max Temp: <span id="temp-max"></span></p>
+      <p>Min Temp: <span id="temp-min"></span></p>
+    </div>
+
+    <div>
+      <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+    </div>
+
+    <div class="flex items-center justify-center ">
+      <a href="#" class="toggle-popup px link blue b"> + MORE </a>
+    </div>
+
+    <div id="popup" class="dn fixed absolute--fill ma6 pa6 items-center tc center bg-washed-yellow overflow-hidden">
+      <a href="#" class="toggle-popup link absolute top-0 right-0 px pa3 Black">Close</a>
+
+      <body class="pa6 bg-washed-yellow items-center tc center ">
+        <div class="grid2 tc justify-center px gray f4 pa5">
+          <div>
+            <img src="cloudy.png" alt="sun">
+            <p>MON</p>
+            <p>3 - 8ºC</p>
+            <h5>WIND: WNW 12mph</h5>
+            <h5>HUMIDITY: 71%</h5>
+          </div>
+
+          <div>
+            <img src="sunny.png" alt="sun">
+            <p>TUE</p>
+            <p>6 - 9ºC</p>
+            <h5>WIND: WNW 8mph</h5>
+            <h5>HUMIDITY: 20%</h5>
+          </div>
+
+          <div>
+            <img src="snow.png" alt="sun">
+            <p>WED</p>
+            <p>-1 - 0ºC</p>
+            <h5>WIND: WNW 40mph</h5>
+            <h5>HUMIDITY: 90%</h5>
+          </div>
+
+          <div class="red">
+            <img src="rain.png" alt="sun">
+            <p>THU</p>
+            <p>9 - 11ºC</p>
+            <h5>WIND: WNW 30mph</h5>
+            <h5>HUMIDITY: 99%</h5>
+          </div>
+          <div>
+            <img src="cloudy.png" alt="sun">
+            <p>FRI</p>
+            <p>3 - 8ºC</p>
+            <h5>WIND: WNW 22mph</h5>
+            <h5>HUMIDITY: 10%</h5>
+          </div>
+
+          <div>
+            <img src="sunny.png" alt="sun">
+            <p>SAT</p>
+            <p>10 - 20ºC</p>
+            <h5>WIND: WNW 2mph</h5>
+            <h5>HUMIDITY: 15%</h5>
+          </div>
+
+          <div>
+            <img src="sunny.png " alt="sun ">
+            <p>SUN</p>
+            <p>14 - 19ºC</p>
+            <h5>WIND: WNW 22mph</h5>
+            <h5>HUMIDITY: 10%</h5>
+          </div>
+        </div>
+
+    </div>
+
+
+    <form id="location-search" class="pa4">
+      <h1>
+          <span class="mr3 mb2">
+            Location:
+          </span>
+          <input type="text"  class="px" id="area" value="Boston">
+        </h1>
+    </form>
+
+
+  </div>
+  </body>
+
+  <!-- Site JavaScript -->
+  <script src="/javascript/toggleClass.js" charset="utf-8"></script>
+  <script src="/javascript/main.js" charset="utf-8"></script>
+  <script src="/javascript/weather.js" charset="utf-8"></script>
+</body>
+
+</html>

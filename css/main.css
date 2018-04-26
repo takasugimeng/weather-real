@@ -1,0 +1,69 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+.navy {
+  color: #001b44;
+}
+.bg-washed-yellow {
+  background-color: #fffceb;
+}
+
+.px {
+  font-family: Pixellari;
+}
+
+.clear .weather-icon {
+  background: url("/sunny.png") center center no-repeat;
+  width: 123px;
+  height: 257px;
+}
+
+.warm .weather-icon {
+  background: url("/sunny.png") center center no-repeat;
+  width: 123px;
+  height: 257px;
+}
+
+.windy .weather-icon {
+  background: url("/cloudy.png") center center no-repeat;
+  width: 123px;
+  height: 257px;
+  background-color: red;
+}
+
+.cloudy .weather-icon {
+  background: url("/cloudy.png") center center no-repeat;
+  width: 123px;
+  height: 257px;
+}
+
+.snow .weather-icon {
+  background: url("/snow.png") center center no-repeat;
+  width: 123px;
+  height: 257px;
+}
+
+.rain .weather-icon {
+  background: url("/rain.png")center center no-repeat;
+  width: 123px;
+  height: 257px;
+}
+
+@font-face {
+  font-family: Pixellari;
+  src: url(fonts/Pixellari.ttf);
+}
+
+@media (min-width: 600px) {
+  .grid1 {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap: 5px;
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px 200px;
+    grid-gap: 5px;
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Set a page title -->
+  <title>Weather</title>
+
+  <!-- Site Styles -->
+  <link rel="stylesheet" href="/css/tachyons.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/styles/fonts/fonts.css" />
+</head>
+
+<body class="pa5 bg-washed-yellow">
+  <div class="pt6 tc">
+    <a href="days.html" class="tc">
+  <img src="sunny.png"  alt="days" border="0">
+  </a>
+  </div>
+
+
+
+  <div class="pt4 tc">
+    <a href="/days.html" class="px red f-headline b
+   link black navy hover-light-yellow">4ºC</a>
+    <!-- <a href="/days.html" class="f2 b gray navy link black">/ 60ºF</a> -->
+    <details class="hover-light-yellow ">
+      <summary></summary>
+
+      <div class="grid1 justify-center px gray f4 pa4">
+        <div>
+          <img src="cloudy.png" alt="sun">
+          <p>YESTERDAY</p>
+          <p>3 - 8ºC</p>
+        </div>
+
+        <div>
+          <img src="sunny.png" alt="sun">
+          <p class="red ">TODAY</p>
+          <p class="red ">6 - 9ºC</p>
+        </div>
+
+        <div>
+          <img src="snow.png" alt="sun">
+          <p>TOMORROW</p>
+          <p>-1 - 0ºC</p>
+        </div>
+
+        <div>
+          <img src="rain.png" alt="sun">
+          <p>AFTER TMR</p>
+          <p>9 - 11ºC</p>
+        </div>
+      </div>
+
+      <a href="days.html" class="px link gray f4 hover-light-yellow ">+More Days</a>
+
+
+    </details>
+
+    <h2 class="pt1 navy px">Boston, MA</h2>
+  </div>
+
+
+  <div class="tc ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      input[type=text] {
+        width: 120px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('search.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 10px 20px 10px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+
+      input[type=text]:focus {
+        width: 10%;
+      }
+    </style>
+    <form id="location-search">
+      <input id="area" type="text" name="search" class="px " placeholder="Ur Zip..">
+    </form>
+
+    <div class="dn">
+      <div class="w-100 w-50-m w-third-l">
+        <h2>Location</h2>
+        <p>City: <span id="location-name"></span></p>
+        <p>Country: <span id="country"></span></p>
+      </div>
+
+      <div class="w-100 w-50-m w-third-l">
+        <h2>Temperature</h2>
+        <p>Current Temp: <span id="temp"></span></p>
+        <p>Max Temp: <span id="temp-max"></span></p>
+        <p>Min Temp: <span id="temp-min"></span></p>
+      </div>
+
+      <div class="w-100 w-50-m w-third-l">
+        <h2>Weather</h2>
+        <p>Condition: <span id="condition"></span></p>
+        <p>Desription: <span id="condition-description"></span></p>
+        <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+      </div>
+    </div>
+
+    <div id="error" class="dn bg-red white pa4 fixed bottom-0 w-100">
+      Sorry, we couldn't find that city.
+    </div>
+  </div>
+
+
+
+
+
+</body>
+<!-- Site JavaScript -->
+<script src="/javascript/weather.js" charset="utf-8"></script>
+</body>
+
+</html>
