@@ -17,37 +17,42 @@
   background: url("/sunny.png") center center no-repeat;
   width: 123px;
   height: 257px;
+  background-color: white;
 }
 
-.warm .weather-icon {
-  background: url("/sunny.png") center center no-repeat;
+.mist .weather-icon {
+  background: url("/cloudy.png") center center no-repeat;
   width: 123px;
   height: 257px;
+  background-color: white;
 }
 
 .windy .weather-icon {
   background: url("/cloudy.png") center center no-repeat;
   width: 123px;
   height: 257px;
-  background-color: red;
+  background-color: white;
 }
 
-.cloudy .weather-icon {
+.clouds .weather-icon {
   background: url("/cloudy.png") center center no-repeat;
   width: 123px;
   height: 257px;
+  background-color: white;
 }
 
 .snow .weather-icon {
   background: url("/snow.png") center center no-repeat;
   width: 123px;
   height: 257px;
+  background-color: white;
 }
 
 .rain .weather-icon {
   background: url("/rain.png")center center no-repeat;
   width: 123px;
   height: 257px;
+  background-color: white;
 }
 
 @font-face {
