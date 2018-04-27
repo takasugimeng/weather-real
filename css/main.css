@@ -14,14 +14,14 @@
 }
 
 .clear .weather-icon {
-  background: url("/sunny.png") center center no-repeat;
+  background: url("/sun.png") center center no-repeat;
   width: 123px;
   height: 257px;
   background-color: white;
 }
 
 .dust .weather-icon {
-  background: url("/sunny.png") center center no-repeat;
+  background: url("/sun.png") center center no-repeat;
   width: 123px;
   height: 257px;
   background-color: white;
