@@ -20,6 +20,13 @@
   background-color: white;
 }
 
+.dust .weather-icon {
+  background: url("/sunny.png") center center no-repeat;
+  width: 123px;
+  height: 257px;
+  background-color: white;
+}
+
 .mist .weather-icon {
   background: url("/cloudy.png") center center no-repeat;
   width: 123px;
@@ -53,6 +60,13 @@
   width: 123px;
   height: 257px;
     background-color: white;
+}
+
+.hot .weather-icon {
+  background: url("/sunny.png") center center no-repeat;
+  width: 123px;
+  height: 257px;
+  background-color: white;
 }
 
 @font-face {
