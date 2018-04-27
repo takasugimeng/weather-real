@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Set a page title -->
-  <title>Weather</title>
+  <title>Hey Weather</title>
 
   <!-- Site Styles -->
   <link rel="stylesheet" href="/css/tachyons.min.css">
@@ -27,20 +27,20 @@
     <div class="weather-icon center"></div>
 
     <div>
-      <h1> <span id="temp" class="f-headline"></span></h1>
-      <p>Max Temp: <span id="temp-max"></span></p>
-      <p>Min Temp: <span id="temp-min"></span></p>
+      <h1> <span id="temp" class="f-headline navy"></span></h1>
+      <p>Max Temp: <span id="temp-max" class="navy"></span></p>
+      <p>Min Temp: <span id="temp-min" class="navy"></span></p>
     </div>
 
     <div>
-      <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+      <p>Wind Speed: <span id="wind-speed" class="navy"></span>mph</p>
     </div>
 
-    <div class="flex items-center justify-center ">
-      <a href="#" class="toggle-popup px link blue b"> + MORE </a>
+    <div class="flex items-center justify-center">
+      <a href="#" class="toggle-popup px link green b hover-red"> + MORE </a>
     </div>
 
-    <div id="popup" class="dn fixed absolute--fill ma6 pa6 items-center tc center bg-washed-yellow overflow-hidden">
+    <div id="popup" class="dn modal-open fixed absolute--fill ma6 pa6 items-center tc center bg-washed-yellow">
       <a href="#" class="toggle-popup link absolute top-0 right-0 px pa3 Black">Close</a>
 
       <body class="pa6 bg-washed-yellow items-center tc center ">
@@ -104,9 +104,9 @@
     </div>
 
 
-    <form id="location-search" class="pa4">
+    <form id="location-search" class="pa4 navy">
       <h1>
-          <span class="mr3 mb2 f4-ns f5">
+          <span class="mr3 mb2 f4-ns f5 navy">
             Location:
           </span>
           <input type="text"  class="px f5" id="area" value="Boston">
